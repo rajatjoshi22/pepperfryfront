@@ -51,7 +51,10 @@ public Tables:string[]=[
 "Office Tables",
 "Work Stations",
 "Executive Desks",
-"Kids Study Table"
+"Kids Study Table",
+"Coffee Tables",
+"Dinning Tables",
+"Side Tables"
 ]
 public sofas:string[]=[
   "1 Seater Sofas",

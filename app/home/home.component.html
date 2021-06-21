@@ -76,7 +76,7 @@
         <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/2021_web_regBanner_01.jpg" style="margin-top: 25px;" height="100px" width="100%" alt="">
     </div>
     <div class="row" style="margin-top: 20px;">
-        <a href=""><img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Safe_Web2_2x_11062021.jpg" style="margin-top: 25px;" height="80px" width="100%" alt="">
+        <a href="https://www.pepperfry.com/safe_delivery.html"><img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Safe_Web2_2x_11062021.jpg" style="margin-top: 25px;" height="80px" width="100%" alt="">
         </a>
     </div>
     <div class="container" style=" background-color:rgb(247, 245, 244); margin-top: 30px;">
@@ -96,10 +96,13 @@
                         <h5 class="card-title" id="title">{{product.productName}}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">by&nbsp;{{product.brand.brandName}}</h6>
                         <h6 class="card-subtitle mb-2 text-muted">Price:{{product.price|currency:'INR'}}</h6>
+                        <div id="star ">
+                            <span class="fa fa-star checked " *appNumber="product.ratings "></span>
+                        </div>
                         <img [src]="product.imagePath" class="card-img-top" alt="...">
-                        <p class="card-text">{{product.description}}</p>
-                        <a href="#" class="btn mr-2"><i class="fa fa-link"></i> Visit Site</a>
-                        <a href="#" class="btn"><i class="fa fa-github"></i> Github</a>
+
+                        <a href="#" class="btn mr-2"><i class="fa fa-cart-arrow-down"></i>Cart</a>
+                        <a href="#" class="btn" [routerLink]='["/showproduct",product.productId]'><i class="fa fa-anchor"></i> View</a>
                     </div>
                 </div>
 

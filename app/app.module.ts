@@ -13,6 +13,10 @@ import { Header2Component } from './header2/header2.component';
 import { FormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
+import { ShowoneComponent } from './showone/showone.component';
+import { NumberPipe } from './custpipes/number.pipe';
+import { NumberDirective } from './custdirectice/number.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +27,12 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     PageNotFoundComponent,
     Header2Component,
-    SignupComponent
+    SignupComponent,
+    FooterComponent,
+    ShowoneComponent,
+    NumberPipe,
+    NumberDirective,
+   
   ],
   imports: [
     BrowserModule,
